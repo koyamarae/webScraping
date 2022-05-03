@@ -1,0 +1,8 @@
+version: "3"
+services:
+  pythonapp:
+    container_name: "app"
+    build: ./app
+    volumes:
+      - ./app/source:/app/source
+      - ./app/data:/app/data
